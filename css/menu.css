@@ -1,0 +1,91 @@
+/************ MENU HERO ************/
+.hero__container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+h1.hero__container--box {
+  color: var(--white);
+  margin-top: 0;
+  font-size: 3.125rem;
+  text-align: center;
+}
+
+/* 300px by 200px at full width */
+
+.hero__container--box {
+  width: clamp(200px, 25%, 300px);
+  height: clamp(180px, 20%, 200px);
+  background-color: var(--graphite);
+}
+/*********** MENU NAV ***********/
+
+.navbar__menu {
+  background-color: var(--graphite);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+}
+
+.navbar__menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__menu ul li {
+  color: var(--white);
+  list-style-type: none;
+  border-left: 4px solid var(--nitro-blue);
+  margin: 10px;
+  padding-left: 20px;
+}
+
+.navbar__menu ul li a {
+  text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.navbar__menu ul li a:hover {
+  color: var(--nitro-blue);
+}
+
+/********** MENU ITEMS **********/
+.menu__container {
+  margin-top: -5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--nitro-pink);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__container--section-2 {
+  background-color: var(--light-gray);
+}
+
+.menu__container--items {
+  width: 40%;
+}
+
+#cold-drinks {
+  background-color: var(--light-gray);
+}
+
+#hot-drinks p.desc,
+#cold-drinks p.desc,
+#pastries p.desc {
+  font-style: italic;
+}

@@ -1,0 +1,86 @@
+/************ HERO ************/
+
+.hero {
+  background-color: var(--nitro-pink);
+  height: 750px;
+  position: relative;
+}
+
+.hero img {
+  margin-left: 15%;
+}
+
+.hero button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/********** PRODUCT CARDS *********/
+
+.products h2 {
+  font-weight: 300;
+}
+
+.products__container {
+  display: flex;
+  justify-content: space-around;
+  max-height: 500px;
+}
+
+.products__container--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  width: 30%;
+}
+
+.products__container--card img {
+  height: 55%;
+}
+
+.products__container--card .price {
+  font-size: 2.0625rem;
+}
+
+/************ DISCOUNT ************/
+
+.discount {
+  background-color: var(--graphite);
+  width: 80%;
+  padding: 0 3rem;
+}
+
+.discount p {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--white);
+  margin-top: 0;
+}
+
+/************ FOOTER ************/
+
+footer {
+  background-color: var(--nitro-pink);
+}
+
+footer h3 {
+  font-size: 2.0625rem;
+}
+
+.socials {
+  overflow: hidden;
+}
+
+img.social {
+  width: 3.125rem;
+  height: auto;
+}
