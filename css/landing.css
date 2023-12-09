@@ -1,86 +1,162 @@
 /************ HERO ************/
 
 .hero {
-  background-color: var(--nitro-pink);
+  background-color: var(--accent-2);
   height: 750px;
-  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.hero img {
-  margin-left: 15%;
+.hero__desc {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.hero button {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.hero__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-lt);
+  margin-bottom: 0;
+}
+
+.hero__text {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
+  margin-bottom: 3.125rem;
+}
+
+.hero__link {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
+}
+
+/********** CONTAINER FOR PRODUCT CARDS *********/
+
+.container {
+  background-color: var(--md);
+  margin: 0;
+  padding: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-lt);
+  text-align: center;
+  margin-top: 0;
+}
+
+.container__cards {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  padding: 1.125rem;
+}
+
+.container__link {
+  font-weight: var(--fw-ref);
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
 }
 
 /********** PRODUCT CARDS *********/
 
-.products h2 {
-  font-weight: 300;
-}
-
-.products__container {
-  display: flex;
-  justify-content: space-around;
-  max-height: 500px;
-}
-
-.products__container--card {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--white);
-  border-radius: 10px;
+  background-color: var(--lt);
+  border-radius: 0.625rem;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-bottom: 3rem;
-  padding-top: 1rem;
-  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0.25px 4px 9px;
+  margin-bottom: 2.5rem;
+  padding: 2.5rem;
+  min-width: 20.625rem;
+  height: 27.5rem;
 }
 
-.products__container--card img {
+.card__image {
   height: 55%;
 }
 
-.products__container--card .price {
-  font-size: 2.0625rem;
+.card__title {
+  font-size: var(--fs-med);
+  font-weight: var(--fw-reg);
 }
 
-/************ DISCOUNT ************/
-
-.discount {
-  background-color: var(--graphite);
-  width: 80%;
-  padding: 0 3rem;
+.card__price {
+  font-size: var(--fs-med);
+  font-weight: var(--fw-reg);
+  color: var(--accent-1);
 }
 
-.discount p {
-  font-size: 2.5rem;
-  font-weight: 400;
+/************ DISCOUNT BANNER ************/
+
+.banner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 31.25rem;
+}
+
+.banner {
+  background-color: var(--dk);
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner__text {
+  font-size: var(--fs-banner);
+  font-weight: var(--fw-reg);
   text-align: center;
-  color: var(--white);
-  margin-top: 0;
+  color: var(--lt);
+  padding: 2.5rem;
+  margin: 0;
+}
+
+.banner__text--bold {
+  font-weight: var(--fw-bold);
+  padding-left: 0.5rem;
 }
 
 /************ FOOTER ************/
 
 footer {
-  background-color: var(--nitro-pink);
+  background-color: var(--accent-2);
+  height: 18.75rem;
 }
 
-footer h3 {
-  font-size: 2.0625rem;
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3.75rem;
 }
 
-.socials {
-  overflow: hidden;
+.contact__title {
+  font-size: var(--fs-med);
+  font-weight: var(--fw-lt);
 }
 
-img.social {
+.contact__text {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
+  line-height: 0.5;
+}
+
+.contact__text--bold {
+  font-weight: var(--fw-bold);
+}
+
+.contact__image {
   width: 3.125rem;
   height: auto;
 }

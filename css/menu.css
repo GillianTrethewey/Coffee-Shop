@@ -2,90 +2,107 @@
 .hero__container {
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: var(--lt);
   background-image: url("../assets/images/coffee-circle.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 43.75rem;
   width: 100%;
 }
 
-h1.hero__container--box {
-  color: var(--white);
+.hero__box {
+  color: var(--lt);
   margin-top: 0;
-  font-size: 3.125rem;
+  font-size: var(--fs-med-lg);
+  font-weight: var(--fw-lt);
   text-align: center;
+  width: clamp(12.5rem, 25%, 18.75rem);
+  height: clamp(11.25rem, 20%, 12.5rem);
+  background-color: var(--dk);
 }
 
-/* 300px by 200px at full width */
-
-.hero__container--box {
-  width: clamp(200px, 25%, 300px);
-  height: clamp(180px, 20%, 200px);
-  background-color: var(--graphite);
-}
 /*********** MENU NAV ***********/
 
-.navbar__menu {
-  background-color: var(--graphite);
+.sub-menu {
+  background-color: var(--dk);
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 5rem;
+  height: 3.75rem;
 }
 
-.navbar__menu ul {
+.sub-menu__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navbar__menu ul li {
-  color: var(--white);
+.sub-menu__item {
+  color: var(--lt);
   list-style-type: none;
-  border-left: 4px solid var(--nitro-blue);
+  border-left: 4px solid var(--accent-1);
   margin: 10px;
   padding-left: 20px;
 }
 
-.navbar__menu ul li a {
+.sub-menu__link {
   text-decoration: none;
-  color: var(--white);
+  color: var(--lt);
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
 }
 
-.navbar__menu ul li a:hover {
-  color: var(--nitro-blue);
+.sub-menu__link:hover {
+  color: var(--accent-1);
 }
 
 /********** MENU ITEMS **********/
-.menu__container {
+
+.container__menu {
   margin-top: -5px;
   width: 100%;
   display: flex;
-  justify-content: center;
-  background-color: var(--nitro-pink);
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--accent-2);
   text-align: center;
   margin: 0;
   padding: 0;
+  padding-bottom: 1.125rem;
 }
 
-.menu__container--section-2 {
-  background-color: var(--light-gray);
+.container__menu--accent {
+  background-color: var(--md);
 }
 
-.menu__container--items {
-  width: 40%;
+.menu {
+  width: 35%;
 }
 
-#cold-drinks {
-  background-color: var(--light-gray);
+.menu--accent {
+  background-color: var(--md);
 }
 
-#hot-drinks p.desc,
-#cold-drinks p.desc,
-#pastries p.desc {
+.menu__heading-title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-lt);
+}
+
+.menu__item-title {
+  font-size: var(--fs-med);
+  font-weight: var(--fw-lt);
+}
+
+.menu__item-desc {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
   font-style: italic;
+}
+
+.menu__item-price {
+  color: var(--accent-1);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-reg);
 }
