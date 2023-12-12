@@ -35,6 +35,7 @@
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: var(--accent-2);
 }
 
@@ -102,7 +103,7 @@ header {
   background-color: var(--accent-1);
   color: var(--lt);
   border: 1px solid var(--accent-1);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-sm-med);
   font-weight: var(--fw-reg);
   padding: 1.125rem;
   width: 11.25rem;
