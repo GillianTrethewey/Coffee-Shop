@@ -71,25 +71,54 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--lt);
   border-radius: 0.625rem;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.2) 0.25px 4px 9px;
+  box-shadow: rgba(0,0,0,0.25) 0px 5px 9px -1px;
   margin-bottom: 2.5rem;
-  padding: 2.5rem;
   min-width: 20.625rem;
   height: 27.5rem;
 }
 
 .card__image {
-  height: 55%;
+  height: 17.5rem;
+  padding-top: 1.125rem;
+  margin-bottom: 2.5rem;
+
+}
+
+.card__details {
+  background-color: var(--accent-2);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.125rem;
+  border-radius: 0.625rem;
+  
+}
+
+.card__text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .card__title {
   font-size: var(--fs-med);
-  font-weight: var(--fw-reg);
+  font-weight: var(--fw-lt);
+  margin: 0;
+  padding: 0;
+}
+
+.card__sub-text {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-lt);
+  margin: 0;
+  padding: 0;
 }
 
 .card__price {
