@@ -168,45 +168,37 @@
   width: 3.125rem;
 }
 
-.promo__graphics-box {
+/********* PROMO GRAPHICS CAN ********/
+
+.promo__graphics-container:before {
+  content: "";
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/images/coldbrewbackground.png);
+  bottom: 15px;
+  right: 15px;
+  border: 5px solid var(--accent-1);
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+}
+
+.promo__graphics-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 25rem;
+  background-image: url("../assets/images/coldbrewbackground.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-width: 25rem;
   min-height: 25rem;
-}
-
-.promo__graphics-container {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 25rem;
-  height: 25rem;
-}
-
-.promo__graphics {
-  position: absolute;
-}
-
-.promo__graphics--accent {
   position: relative;
-  border: 5px solid var(--accent-1);
-  offset: 15px;
-  bottom: 15px;
-  right: 15px;
-  width: 25rem;
-  height: 25rem;
 }
 
 .promo__graphics-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   bottom: 15px;
   right: 15px;
@@ -247,8 +239,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  
-
 }
 
 .footer__images-container {
@@ -260,7 +250,7 @@
   opacity: 25%;
   position: relative;
   width: 7.5rem;
-  object-fit:contain;
+  object-fit: contain;
 }
 
 .footer__images--left {
@@ -268,11 +258,9 @@
   left: -40px;
 }
 
-
 .footer__images--right {
   top: 140px;
   left: 15px;
-
 }
 
 .contact__container {
@@ -301,4 +289,40 @@
 .contact__image {
   width: 3.125rem;
   height: auto;
+}
+
+/********** ANIMATIONS **********/
+
+/**** GRAPHICS IMAGE ROTATION ****/
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.promo__graphics:hover .promo__graphics-image {
+  -webkit-animation: rotate 2s infinite linear;
+  animation: rotate 2s infinite linear;
+}
+
+/*** PROMO BANNER COLOR CHANGE ***/
+
+@keyframes color-change {
+  from {
+    background-color: var(--dk);
+  }
+  to {
+    background-color: var(--accent-1);
+  }
+}
+
+.banner {
+  -webkit-animation: rotate 2s infinite linear;
+  animation: color-change 2.5s infinite linear alternate;
 }
