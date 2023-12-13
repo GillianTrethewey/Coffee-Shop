@@ -99,19 +99,47 @@ header {
 
 /************ UNIVERSAL ************/
 
+.button__group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.button__group--left {
+  justify-content: flex-start;
+
+}
+
+.button__container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 11.25rem;
+  height: auto;
+}
+
+
 .button {
   background-color: var(--accent-1);
   color: var(--lt);
-  border: 1px solid var(--accent-1);
   font-size: var(--fs-sm-med);
   font-weight: var(--fw-reg);
-  padding: 1.125rem;
   width: 11.25rem;
+  height: 3.75rem;
   margin-bottom: 3rem;
+  border: 2px solid var(--accent-1);
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 
-.button:hover {
-  background-color: var(--lt);
-  color: var(--accent-1);
-  border: 1px solid var(--accent-1);
+.button--accent {
+  border: 2px solid var(--dk);
+  offset: 15px;
+  bottom: 30px;
+  right: 5px;
+  width: 11.25rem;
+  height: 3.75rem;
+  position: relative;
 }

@@ -24,7 +24,6 @@
 .hero__text {
   font-size: var(--fs-sm);
   font-weight: var(--fw-reg);
-  margin-bottom: 3.125rem;
 }
 
 .hero__link {
@@ -61,11 +60,6 @@
   font-weight: var(--fw-ref);
 }
 
-.container__button {
-  display: flex;
-  justify-content: center;
-}
-
 /********** PRODUCT CARDS *********/
 
 .card {
@@ -76,17 +70,15 @@
   background-color: var(--lt);
   border-radius: 0.625rem;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.2) 0.25px 4px 9px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 9px -1px;
   margin-bottom: 2.5rem;
-  min-width: 20.625rem;
+  width: 20.625rem;
   height: 27.5rem;
 }
 
 .card__image {
-  height: 17.5rem;
+  max-height: 17rem;
   padding-top: 1.125rem;
-  margin-bottom: 2.5rem;
 }
 
 .card__details {
@@ -95,7 +87,8 @@
   display: flex;
   justify-content: space-between;
   padding: 1.125rem;
-  border-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
 }
 
 .card__text-group {
@@ -161,29 +154,62 @@
 .promo__byline {
   font-size: var(--fs-sm);
   font-weight: var(--fw-reg);
+  margin-bottom: 2rem;
 }
 
 .promo__image-group {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.125rem;
 }
 
 .promo__image {
   width: 3.125rem;
 }
 
-.promo__graphics {
+.promo__graphics-box {
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../assets/images/coldbrewbackground.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   min-width: 25rem;
   min-height: 25rem;
+}
+
+.promo__graphics-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+}
+
+.promo__graphics {
+  position: absolute;
+}
+
+.promo__graphics--accent {
+  position: relative;
+  border: 5px solid var(--accent-1);
+  offset: 15px;
+  bottom: 15px;
+  right: 15px;
+  width: 25rem;
+  height: 25rem;
+}
+
+.promo__graphics-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 15px;
+  right: 15px;
 }
 
 /************* BANNER *************/
@@ -215,15 +241,46 @@
 
 /************ FOOTER ************/
 
-footer {
+.footer {
   background-color: var(--accent-2);
   height: 18.75rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+
 }
 
-.contact {
+.footer__images-container {
+  overflow: hidden;
+}
+
+.footer__images {
+  position: relative;
+  opacity: 25%;
+  position: relative;
+  width: 7.5rem;
+  object-fit:contain;
+}
+
+.footer__images--left {
+  top: 50px;
+  left: -40px;
+}
+
+
+.footer__images--right {
+  top: 140px;
+  left: 15px;
+
+}
+
+.contact__container {
   display: flex;
   justify-content: space-around;
   padding-top: 3.75rem;
+  z-index: 99;
+  width: 100%;
 }
 
 .contact__title {
